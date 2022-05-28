@@ -1,6 +1,4 @@
-version: 2.1
-jobs:
-  Aklipn:
+
     docker:
       - image: cimg/node:14.19.3
     <<: &commonSteps
