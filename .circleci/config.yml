@@ -1,4 +1,13 @@
-
+version: 2.1
+jobs:
+  Aklipn:
+    docker:
+      - image: cimg/node:14.19.3
+    <<: &commonSteps
+      steps:
+        - checkout
+        - run:
+            name: abahi
             command: sudo apt update -y
         - run:
             name: abiah
